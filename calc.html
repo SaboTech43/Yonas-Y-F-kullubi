@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-12">
+        <h1 class="text-5xl text-sky-500 text-center "><span
+                class="underline decoration-green-300 font-medium">Deposit</span> or
+            <span class="underline decoration-green-300 font-medium">Withdraw</span> <span
+                class="font-semibold text-green-500">Money</span>
+        </h1>
+    </header>
+    <main class="mt-8 bg-sky-50 py-10">
+        <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 w-11/12 mx-auto gap-8">
+            <div class="bg-blue-400 rounded px-8 py-10">
+                <h2 class="text-4xl text-white mb-1">Deposit</h2>
+                <h3 class="text-3xl text-white">$<span id="deposit-amount">00</span></h3>
+            </div>
+            <div class="bg-rose-400 rounded px-8 py-10">
+                <h2 class="text-4xl text-white mb-1">Withdraw</h2>
+                <h3 class="text-3xl text-white">$<span id="withdraw-amount">00</span></h3>
+            </div>
+            <div class="bg-green-400 rounded px-8 py-10">
+                <h2 class="text-4xl text-white mb-1">Balance</h2>
+                <h3 class="text-3xl text-white">$<span id="balance-amount">1250</span></h3>
+            </div>
+        </section>
+        <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-11/12 mx-auto gap-8 mt-8">
+            <div class="bg-purple-400 rounded px-8 py-10">
+                <h2 class="text-3xl text-white mb-2">Deposit Money</h2>
+                <input class="block border w-2/3 border-sky-200 outline-none mb-1 px-2 py-1 rounded" type="email"
+                    name="" id="input-deposit" placeholder="Amount you want to deposit">
+                <button id="deposit-btn"
+                    class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2 mt-2 rounded font-medium">Deposit</button>
+            </div>
+            <div class="bg-violet-400 rounded px-8 py-10">
+                <h2 class="text-3xl text-white mb-2">Withdraw Money</h2>
+                <input class="block border w-2/3 border-sky-200 outline-none mb-1 px-2 py-1 rounded" type="email"
+                    name="" id="input-withdraw" placeholder="Amount you want to withdraw">
+                <button id="withdraw-btn"
+                    class="bg-sky-600 hover:bg-sky-700 text-white px-6 py-2 mt-2 rounded font-medium">Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/calc.js"></script>
+</body>
+
+</html>
